@@ -167,7 +167,7 @@ function LanguageSwitcher() {
         SR
       </Link>
       <Link
-        href={switchLocale('en')}
+        href={switchLocale('sr')}
         className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
           currentLocale === 'en' 
             ? 'bg-white shadow-md text-dulci-dark' 
