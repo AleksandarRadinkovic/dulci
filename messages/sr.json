@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "title": "Dulci - Slatke priče iz naše kuhinje",
+    "description": "Ručno pravljeni kolači, torte i poslastice sa ljubavlju"
+  },
+  "nav": {
+    "home": "Početna",
+    "products": "Proizvodi",
+    "about": "O nama",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "title": "Slatke priče iz naše kuhinje",
+      "subtitle": "Ručno pravljeni kolači i torte sa ljubavlju, za svaku posebnu priliku",
+      "cta_primary": "Pogledaj proizvode",
+      "cta_secondary": "Naša priča",
+      "stat_customers": "Zadovoljnih kupaca",
+      "stat_products": "Vrsta kolača",
+      "stat_handmade": "Ručna izrada",
+      "scroll": "Skroluj"
+    },
+    "featured": {
+      "title": "Naši najpopularniji kolači",
+      "subtitle": "Ručno pravljeni sa ljubavlju, svaki zalogaj je poseban",
+      "product1_name": "Sacher torta",
+      "product1_desc": "Bogata čokoladna torta sa slojem džema od kajsije",
+      "product1_ingredients": "Čokolada, jaja, brašno, šećer, kajsija džem",
+      "product2_name": "Rafaelo kuglice",
+      "product2_desc": "Kremaste kuglice sa kokosom i lješnikom",
+      "product2_ingredients": "Kokos, lješnjak, bijela čokolada, mlijeko u prahu",
+      "product3_name": "Čokoladni mousse",
+      "product3_desc": "Lagani i kremasti desert sa belgijskom čokoladom",
+      "product3_ingredients": "Belgijska čokolada, pavlaka, jaja, šećer",
+      "ingredients_label": "Sastojci",
+      "learn_more": "Saznaj više",
+      "view_all": "Svi proizvodi"
+    },
+    "about": {
+      "title": "Naša priča",
+      "paragraph1": "Dulci je nastao iz ljubavi prema slatkim trenucima koji spajaju porodicu i prijatelje. Svaki kolač koji napravimo nosi pečat ljubavi, pažnje i tradicije.",
+      "paragraph2": "Koristimo samo najkvalitetnije sastojke i provjerene recepte koji se prenose generacijama. Svaki desert je jedinstvena priča, napravljena posebno za vas.",
+      "cta": "Saznaj više o nama",
+      "values_title": "Naše vrijednosti",
+      "values_subtitle": "Ono što nas čini posebnim",
+      "value1_title": "Sa ljubavlju",
+      "value1_desc": "Svaki kolač pravimo sa pažnjom i posvećenošću, kao da ga pravimo za našu porodicu",
+      "value2_title": "Kvalitet",
+      "value2_desc": "Koristimo samo najkvalitetnije sastojke i provjerene recepte",
+      "value3_title": "Tradicija",
+      "value3_desc": "Čuvamo stare recepte i kombinujemo ih sa modernim trendovima"
+    }
+  },
+  "footer": {
+    "brand": "Dulci",
+    "description": "Ručno pravljeni kolači i torte sa ljubavlju, za svaku posebnu priliku. Iz naše kuhinje direktno na vašu trpezu.",
+    "quickLinks": "Brzi linkovi",
+    "home": "Početna",
+    "products": "Proizvodi",
+    "about": "O nama",
+    "contact": "Kontakt",
+    "emailLabel": "Email",
+    "phoneLabel": "Telefon",
+    "locationLabel": "Lokacija",
+    "rights": "Sva prava zadržana",
+    "privacy": "Politika privatnosti",
+    "terms": "Uslovi korištenja"
+  }
+}

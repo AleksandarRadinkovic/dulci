@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "title": "Dulci - Sweet stories from our kitchen",
+    "description": "Handmade cakes, pastries and desserts made with love"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+ "home": {
+    "hero": {
+      "title": "Sweet stories from our kitchen",
+      "subtitle": "Handmade cakes and pastries with love, for every special occasion",
+      "cta_primary": "View products",
+      "cta_secondary": "Our story",
+      "stat_customers": "Happy customers",
+      "stat_products": "Cake varieties",
+      "stat_handmade": "Handmade",
+      "scroll": "Scroll"
+    },
+    "featured": {
+      "title": "Our most popular cakes",
+      "subtitle": "Handmade with love, every bite is special",
+      "product1_name": "Sacher Cake",
+      "product1_desc": "Rich chocolate cake with apricot jam layer",
+      "product1_ingredients": "Chocolate, eggs, flour, sugar, apricot jam",
+      "product2_name": "Raffaello Balls",
+      "product2_desc": "Creamy coconut and hazelnut balls",
+      "product2_ingredients": "Coconut, hazelnut, white chocolate, milk powder",
+      "product3_name": "Chocolate Mousse",
+      "product3_desc": "Light and creamy dessert with Belgian chocolate",
+      "product3_ingredients": "Belgian chocolate, cream, eggs, sugar",
+      "ingredients_label": "Ingredients",
+      "learn_more": "Learn more",
+      "view_all": "All products"
+    },
+    "about": {
+      "title": "Our Story",
+      "paragraph1": "Dulci was born from a love for sweet moments that bring family and friends together. Every cake we make carries the mark of love, care, and tradition.",
+      "paragraph2": "We use only the highest quality ingredients and proven recipes passed down through generations. Every dessert is a unique story, made especially for you.",
+      "cta": "Learn more about us",
+      "values_title": "Our Values",
+      "values_subtitle": "What makes us special",
+      "value1_title": "Made with Love",
+      "value1_desc": "Every cake is made with care and dedication, as if we're making it for our own family",
+      "value2_title": "Quality",
+      "value2_desc": "We use only the finest ingredients and proven recipes",
+      "value3_title": "Tradition",
+      "value3_desc": "We preserve old recipes and combine them with modern trends"
+    }
+  },
+  "footer": {
+    "brand": "Dulci",
+    "description": "Handmade cakes and pastries with love, for every special occasion. From our kitchen directly to your table.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
