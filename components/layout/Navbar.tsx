@@ -3,10 +3,9 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-
 
 export function Navbar() {
   const t = useTranslations('nav');
@@ -27,23 +26,22 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           
-      {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-12 h-12 md:w-14 md:h-14 overflow-hidden rounded-full shadow-md group-hover:shadow-lg transition-shadow bg-white">
-            <Image
-              src="/images/logo.jpg"
-              alt="Dulci Logo"
-              width={56}
-              height={56}
-              className="object-cover group-hover:scale-110 transition-transform duration-300"
-              priority
-            />
-          </div>
-          <span className="text-2xl md:text-3xl font-bold text-dulci-dark group-hover:text-dulci-pink-400 transition-colors">
-            Dulci
-          </span>
-        </Link>
-
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative w-12 h-12 md:w-14 md:h-14 overflow-hidden rounded-full shadow-md group-hover:shadow-lg transition-shadow bg-white">
+              <Image
+                src="/images/logo.jpg"
+                alt="Dulci Logo"
+                width={56}
+                height={56}
+                className="object-cover group-hover:scale-110 transition-transform duration-300"
+                priority
+              />
+            </div>
+            <span className="text-2xl md:text-3xl font-bold text-dulci-dark group-hover:text-dulci-pink-400 transition-colors">
+              Dulci
+            </span>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -144,19 +142,22 @@ export function Navbar() {
 
 function LanguageSwitcher() {
   const pathname = usePathname();
+  const router = useRouter();
   
   const segments = pathname.split('/').filter(Boolean);
   const currentLocale = segments[0] === 'sr' || segments[0] === 'en' ? segments[0] : 'sr';
   const pathWithoutLocale = '/' + segments.slice(1).join('/');
   
-  const switchLocale = (locale: string) => {
-    return `/${locale}${pathWithoutLocale}`;
+  const handleLocaleChange = (locale: string) => {
+    const newPath = `/${locale}${pathWithoutLocale}`;
+    router.push(newPath);
+    router.refresh();
   };
 
   return (
     <div className="flex items-center gap-2 bg-dulci-beige-50 rounded-full p-1">
-      <Link
-        href={switchLocale('sr')}
+      <button
+        onClick={() => handleLocaleChange('sr')}
         className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
           currentLocale === 'sr' 
             ? 'bg-white shadow-md text-dulci-dark' 
@@ -164,9 +165,9 @@ function LanguageSwitcher() {
         }`}
       >
         SR
-      </Link>
-      <Link
-        href={switchLocale('en')}  {/* ← OVO ISPRAVI! BILO JE 'sr' */}
+      </button>
+      <button
+        onClick={() => handleLocaleChange('en')}
         className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
           currentLocale === 'en' 
             ? 'bg-white shadow-md text-dulci-dark' 
@@ -174,8 +175,7 @@ function LanguageSwitcher() {
         }`}
       >
         EN
-      </Link>
+      </button>
     </div>
   );
 }
-
