@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { useLocale, useTranslations } from 'next-intl';
+import { Link, usePathname, useRouter } from '@/i18n.routing';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -143,15 +142,10 @@ export function Navbar() {
 function LanguageSwitcher() {
   const pathname = usePathname();
   const router = useRouter();
-  
-  const segments = pathname.split('/').filter(Boolean);
-  const currentLocale = segments[0] === 'sr' || segments[0] === 'en' ? segments[0] : 'sr';
-  const pathWithoutLocale = '/' + segments.slice(1).join('/');
-  
-  const handleLocaleChange = (locale: string) => {
-    const newPath = `/${locale}${pathWithoutLocale}`;
-    router.push(newPath);
-    router.refresh();
+  const currentLocale = useLocale();
+
+  const handleLocaleChange = (locale: 'sr' | 'en') => {
+    router.replace(pathname, { locale });
   };
 
   return (

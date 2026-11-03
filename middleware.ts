@@ -7,5 +7,6 @@ export default createMiddleware({
 });
 
 export const config = {
-  matcher: ['/', '/(sr|en)/:path*']
+  // Sve rute osim API-ja, Next internih fajlova i statičkih fajlova (slike itd.)
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };

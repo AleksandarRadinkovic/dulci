@@ -1,36 +1,20 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n.routing';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { products as allProducts } from '@/lib/products';
 
 export function FeaturedProducts() {
   const t = useTranslations('home.featured');
 
-  const products = [
-    {
-      id: 1,
-      name: t('product1_name'),
-      description: t('product1_desc'),
-      ingredients: t('product1_ingredients'),
-      image: '/images/hero/hero1.jpg',
-    },
-    {
-      id: 2,
-      name: t('product2_name'),
-      description: t('product2_desc'),
-      ingredients: t('product2_ingredients'),
-      image: '/images/hero/hero2.jpg',
-    },
-    {
-      id: 3,
-      name: t('product3_name'),
-      description: t('product3_desc'),
-      ingredients: t('product3_ingredients'),
-      image: '/images/hero/hero3.jpg',
-    },
-  ];
+  const locale = useLocale() as 'sr' | 'en';
+  const featured = ['torta-lotus', 'torta-kraljica-cokolade', 'mono-capri-jagoda'];
+  const products = featured.map((slug) => {
+    const p = allProducts.find((p) => p.slug === slug)!;
+    return { id: p.slug, name: p.name[locale], image: p.image };
+  });
 
   return (
     <section className="py-20 md:py-32 bg-white">
@@ -89,23 +73,9 @@ export function FeaturedProducts() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-dulci-dark mb-2 group-hover:text-dulci-pink-400 transition-colors">
+                <h3 className="text-2xl font-bold text-dulci-dark mb-4 group-hover:text-dulci-pink-400 transition-colors">
                   {product.name}
                 </h3>
-                
-                <p className="text-dulci-dark/70 mb-3">
-                  {product.description}
-                </p>
-
-                {/* Ingredients */}
-                <div className="mb-4 p-3 bg-white/50 rounded-xl">
-                  <p className="text-sm font-semibold text-dulci-dark/80 mb-1">
-                    {t('ingredients_label')}:
-                  </p>
-                  <p className="text-sm text-dulci-dark/60">
-                    {product.ingredients}
-                  </p>
-                </div>
                 
                 <div className="flex gap-3">
                   <Link href="/products" className="flex-1">
@@ -138,7 +108,7 @@ export function FeaturedProducts() {
                 transition={{ delay: index * 0.2 + 0.3, type: 'spring' }}
                 className="absolute top-4 right-4 bg-dulci-pink-400 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg"
               >
-                ⭐ Popular
+                ⭐ Best seller
               </motion.div>
             </motion.div>
           ))}

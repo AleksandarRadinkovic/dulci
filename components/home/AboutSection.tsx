@@ -46,8 +46,9 @@ export function AboutSection() {
           >
             <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/hero/hero1.jpg"
-                alt="About Dulci"
+                src="/images/products/torte/07-torta-malina-pistacija-presjek.webp"
+                alt="Dulci – Malina-pistacija torta"
+                sizes="(min-width: 1024px) 50vw, 100vw"
                 fill
                 className="object-cover"
               />

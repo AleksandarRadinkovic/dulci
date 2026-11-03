@@ -9,7 +9,7 @@
     "about": "About",
     "contact": "Contact"
   },
- "home": {
+  "home": {
     "hero": {
       "title": "Sweet stories from our kitchen",
       "subtitle": "Handmade cakes and pastries with love, for every special occasion",
@@ -49,6 +49,25 @@
       "value2_desc": "We use only the finest ingredients and proven recipes",
       "value3_title": "Tradition",
       "value3_desc": "We preserve old recipes and combine them with modern trends"
+    }
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Individual desserts, cakes, soufflés and desserts in a glass – handmade with love",
+    "cross_section": "cross-section",
+    "unavailable": "Currently unavailable",
+    "categories": {
+      "all": "All",
+      "mono": "Individual desserts",
+      "torte": "Cakes",
+      "sufle": "Dulci Sufflé",
+      "casice": "Dolce Vetro – in a glass"
+    },
+    "badges": {
+      "new": "New",
+      "vegan": "Vegan",
+      "bestseller": "Best seller",
+      "recommended": "Dulci recommends"
     }
   },
   "footer": {

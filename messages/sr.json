@@ -51,6 +51,25 @@
       "value3_desc": "Čuvamo stare recepte i kombinujemo ih sa modernim trendovima"
     }
   },
+  "products": {
+    "title": "Naši proizvodi",
+    "subtitle": "Monoporcije, torte, sufle i deserti u čašici – ručno pravljeni sa ljubavlju",
+    "cross_section": "presjek",
+    "unavailable": "Trenutno nedostupno",
+    "categories": {
+      "all": "Sve",
+      "mono": "Monoporcije",
+      "torte": "Torte",
+      "sufle": "Dulci Sufflé",
+      "casice": "Dolce Vetro – u čašici"
+    },
+    "badges": {
+      "new": "Novo",
+      "vegan": "Vegan",
+      "bestseller": "Best seller",
+      "recommended": "Dulci preporuka"
+    }
+  },
   "footer": {
     "brand": "Dulci",
     "description": "Ručno pravljeni kolači i torte sa ljubavlju, za svaku posebnu priliku. Iz naše kuhinje direktno na vašu trpezu.",
